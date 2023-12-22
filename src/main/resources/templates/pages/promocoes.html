@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.hymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" th:href="@{css/style.css}">
+   
+    <title>Promoções</title>
+</head>
+<body>
+    <header>
+        <div class="header-backimg">
+            
+        </div>
+        <div class="hidden-nav">
+            <div class="dropdown-header">
+                <center><img th:attr="src=@{img/user.png}" src="../imgs/icon_menu.png"></center>
+                <ul class="dropdown-content-header">
+                    <li><a href="home.html">Sobre nós/a></li>
+                    <li><a th:href="@{/destino}">Destinos</a></li>
+                    <li><a  href="#">Promoções</a></li>
+                    <li><a  th:href="@{/contato}">Contato</a></li>
+                    <li><a  th:href="@{login.html}">Login <img alt="icone login" style="height: 20px; width: 20px;border: 1px solid  black; border-radius: 50%;" th:attr="src=@{img/airplane.png}" src="../imgs/user.png"> </a></li>
+
+                </ul>
+            </div>
+        </div>
+        <ul class="header-nav">
+            <li>
+                <a style="background-color:transparent;" href="../index.html"><img class="header-nav-logo" th:attr="src=@{img/airplane.png}" src="../imgs/airplane.png" alt="Logo Empresa"></a>
+            </li>
+            <li><a href="home.html">Sobre nós</a></li>
+            <li><a th:href="@{/destino}">Destinos</a></li>
+            <li><a href="#">Promoções</a></li>
+            <li><a th:href="@{/contato}">Contato</a></li>
+            <li><a th:href="@{/login}">Login <img alt="icone login" style="height: 20px; width: 20px;border: 1px solid  black; border-radius: 50%;" th:attr="src=@{img/user.png}" src="../imgs/user.png"> </a></li>
+        </ul>
+        
+        <ul class="header-content" >
+            <li > 
+                <h2>Promoções</h2>
+                <p>
+                    Encontre aqui sua viagem dos sonhos por valores acessiveis e invista em uma aventura unica, prazerosa e edificante. 
+                </p>
+            </li>
+        </ul>
+    </header>
+    <main class="main-promocoes">
+        <div class="filtro-box">
+            <h3>Localizações</h3>
+            <hr>
+            <div class="filtro-box-lugares">
+                <div class="dropdown">
+                    <p class="frst-child">Europa</p>
+                    <div class="dropdown-content">
+                        <hr>
+                        <div class="filtro">
+                            <input type="checkbox" name="alemanha" id="alemanha">
+                            <label for="alemanha">Alemanha</label>
+                        </div>
+                        <hr>
+                        <div class="filtro">
+                            <input type="checkbox" name="Portugal" id="Portugal">
+                            <label for="Portugal">Portugal</label>
+                        </div>
+                        <hr>
+                        <div class="filtro">
+                            <input type="checkbox" name="Italia" id="Italia">
+                            <label for="Italia">Italia</label>
+                        </div>
+                        <hr>
+                        <div class="filtro">
+                            <input type="checkbox" name="Franca" id="Franca">
+                            <label for="Franca">França</label>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <p class="frst-child">Asia</p>
+                    <div class="dropdown-content">
+                        <hr>
+                        <div class="filtro">
+                            <input type="checkbox" name="Japão" id="Japão">
+                            <label for="Japão">Japão</label>
+                        </div>
+                        <hr>
+                        <div class="filtro">
+                            <input type="checkbox" name="China" id="China">
+                            <label for="China">China</label>
+                        </div>
+                        <hr>
+                        <div class="filtro">
+                            <input type="checkbox" name="India" id="India">
+                            <label for="India">India</label>
+                        </div>
+                        <hr>
+                        <div class="filtro">
+                            <input type="checkbox" name="Franca" id="Franca">
+                            <label for="Franca">Coreia</label>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <p class="frst-child">America</p>
+                    <div class="dropdown-content">
+                        <hr>
+                        <div class="filtro">
+                            <input type="checkbox" name="Brasil" id="Brasil">
+                            <label for="Brasil">Brasil</label>
+                        </div>
+                        <hr>
+                        <div class="filtro">
+                            <input type="checkbox" name="Chile" id="Chile">
+                            <label for="Chile">Chile</label>
+                        </div>
+                        <hr>
+                        <div class="filtro">
+                            <input type="checkbox" name="Italia" id="México">
+                            <label for="Italia">Canada</label>
+                        </div>
+                        <hr>
+                        <div class="filtro">
+                            <input type="checkbox" name="Franca" id="Estados Unidos">
+                            <label for="Franca">Mexico</label>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <p class="frst-child">Nacionais</p>
+                    <div class="dropdown-content">
+                        <hr>
+                        <div class="filtro">
+                            <input type="checkbox" name="Brasil" id="Brasil">
+                            <label for="Brasil">Fernando de Noronha</label>
+                        </div>
+                        <hr>
+                        <div class="filtro">
+                            <input type="checkbox" name="Chile" id="Chile">
+                            <label for="Chile">Foz do Iguaçul</label>
+                        </div>
+                        <hr>
+                        <div class="filtro">
+                            <input type="checkbox" name="Italia" id="México">
+                            <label for="Italia">Angra dos Reis</label>
+                        </div>
+                        <hr>
+                        <div class="filtro">
+                            <input type="checkbox" name="Franca" id="Estados Unidos">
+                            <label for="Franca">Alter do Chão</label>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+               
+                
+            </div>
+
+            <div class="filtro-box-valores">
+                <h3>Valores</h3>
+                <hr>
+                <div>
+                    <label for="Valores">Insira o valor maximo: </label>
+                    <input type="range" min="1" max="100" value="50" class="filtro-box-valores-slider" id="valores">
+                </div>
+            </div>
+
+            <div class="filtro-box-tipo">
+                <h3>Tipo de Voo</h3>
+                <hr>
+                <div class="filtro-box-tipo-container">
+                    <input type="checkbox" name="ida-only" id="ida-only">
+                    <label for="ida-only">Somente Ida</label>
+                </div>
+                <div class="filtro-box-tipo-container">
+                    <input type="checkbox" name="ida-volta" id="ida-volta">
+                    <label for="ida-volta">Ida e Volta</label>
+
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="box-products">
+            <h3>
+                Destinos:
+            </h3>
+            <tbody 
+				style="font-size: 14px;"
+				>
+	          <!-- Substitua 'users' pelo nome da sua lista de usuários no controlador -->
+	          <tr  th:each="destino : ${destinos}">
+				<div style="margin: 10px ; border: solid 1px #674d3c ; padding: 10px; border-radius: 10px;">
+		            <td ><p style="font-size: 17px;" th:text="${destino.id_destino}"></p></td>
+		            <td ><p style="font-size: 17px;" th:text="${destino.pais}"></p></td>
+		            <td ><p style="font-size: 17px;" th:text="${destino.cidade}"></p></td>
+		            <td ><p style="font-size: 17px;" th:text="${destino.aeroporto}"></td>
+		
+		            <td>
+		              <a style="font-size: 17px; margin-left: 20px;"
+		                th:href="@{'/destinos/editar/' + ${destino.id_destino}}"
+		                class="btn btn-primary btn-sm"
+		                >Editar</a
+		              >
+		              <a style="font-size: 17px;"
+		                th:href="@{'/destinos/deletar/' + ${destino.id_destino}}"
+		                class="btn btn-danger btn-sm"
+		                >Excluir</a
+		              >
+		            </td>
+	            </div>
+	          </tr>
+        	</tbody>
+        	 <center>
+				<a style="font-size: 17px; margin-left: 20px;" th:href="@{/destinos/novo}" class="btn btn-success">Adicionar</a>
+	        </center>
+        </div>
+
+    </main>
+    <hr style="color: #674d3c;margin: 0px;">
+    <footer>
+        <div class="info-footer">
+          <h4>Veja Também: </h4>
+          <ul>
+              <li><a href="/home.html">Home</a></li>
+              <li><a href="destinos.html">Destinos</a></li>
+              <li><a href="#">Promoções</a></li>
+              <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+        <div class="info-footer-social-media">
+          <h4>Nos siga nas redes sociais: </h4>
+              <div class="info-footer-logos-container">
+                  
+                  <img src="../imgs/instagram.png" th:attr="src=@{img/instagram.png}" alt="logo instagram">
+                  <img src="../imgs/facebook.png" th:attr="src=@{img/facebook.png}" alt="logo facebook">
+                  <img src="../imgs/twitter.png" th:attr="src=@{img/twitter.png}" alt="logo twitter">
+
+              </div>    
+          </div>
+      </footer>
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap" rel="stylesheet">
+</body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/reset.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">  
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/base.css">
+        <title>Contato</title>
+    </head>
+    <body>
+
+        <header>
+
+            <div class="header-backimg">
+                
+            </div>
+
+            <div class="hidden-nav">
+                <div class="dropdown-header">
+                    <center><img src="../imgs/icon_menu.png"></center>
+                    <ul class="dropdown-content-header">
+                        <li><a href="home.html">Sobre nós</a></li>
+                        <li><a th:href="@{/destino}">Destinos</a></li>
+                        <li><a th:href="@{/promocoes}">Promoções</a></li>
+                        <li><a href="#">Contato</a></li>
+                        <li><a th:href="@{/login}">Login <img alt="icone login" style="height: 20px; width: 20px;border: 1px solid  black; border-radius: 50%;" src="../imgs/user.png"> </a></li>
+                    </ul>
+                </div>
+            </div>
+        
+            <ul class="header-nav">
+                <li>
+                    <a style="background-color:transparent;" href="../index.html"><img class="header-nav-logo" src="../imgs/airplane.png" alt="Logo Empresa"></a>
+                </li>
+                <li><a href="home.html">Sobre nós</a></li>
+                <li><a th:href="@{/destino}">Destinos</a></li>
+                <li><a th:href="@{/promocoes}">Promoções</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="login.html">Login <img alt="icone login" style="height: 20px; width: 20px;border: 1px solid  black; border-radius: 50%;" src="../imgs/user.png"> </a></li>
+            </ul>
+            
+            <ul class="header-content">
+                <li> 
+                    <h2>Contatos</h2>
+                    <p>Leia os artigos ou entre em contato com nosso time de suporte através das opções de chat online<br/> ou chamados via email.</p>
+                </li>
+            </ul>
+
+        </header>
+
+        <main>
+
+            <div style="margin-bottom: 30px;">
+                <h2>Central de Ajuda</h2>
+                <div class="sac-container">
+
+                    <div class="m-card">
+                        <div>
+                            <h4>Atendimento Online</h4>
+                            <p>Conta-nos o que esta acontecendo e iremos te ajudar</p>
+                            <a href="#">Clique Aqui</a>
+                        </div>
+                        <img alt="Icone Atendimento Online" src="../imgs/customer-service.png">
+                    </div>
+                    
+                    <div class="m-card">
+                        <div>
+                            <h4>Casos Pendentes</h4>
+                            <p>Verifique respostas de casos em aberto</p>
+                            <a href="#">Clique Aqui</a>
+                        </div>
+                        <img alt="Icone Casos Pendentes" src="../imgs/hourglass.png">                  
+                    </div>
+
+                </div>
+            </div>
+
+            <div style="margin-bottom: 30px;">
+                <h2>Duvidas Recorrentes</h2>
+                <div class="duvrec-container">
+
+                    <div class="m-card">
+                        <img alt="Icone Protocolos de Saúde" src="../imgs/mask.png">
+                        <div>
+                            <h4>Cuidados</h4>
+                            <p>Protocolos de medida de segurança exigidos para o vôo </p>
+                            <a href="#">Clique Aqui</a>
+                        </div> 
+                    </div>
+
+                    <div class="m-card">
+                        <img alt="icone caixa de pet" src="../imgs/pet-cage.png">
+                        <div>
+                            <h4>Pets</h4>
+                            <p>Entenda como fornecer maior conforto para seu pet nas viagens</p>
+                            <a href="#">Clique Aqui</a>
+                        </div>     
+                    </div>
+
+                    <div class="m-card  ">
+                        <img alt="icone calendario" src="../imgs/calendar.png">
+                        <div>
+                            <h4>Reagendamentos</h4>
+                            <p>Problema com a data escolhida? Descubra como resolver nesse artigo</p>
+                            <a href="#">Clique Aqui</a>
+                        </div> 
+                    </div>
+
+                    <div class="m-card">
+                        <img alt="icone acessibilidade" src="../imgs/wheelchair.png">
+                        <div>
+                            <h4>Acessibilidade</h4>
+                            <p>Entenda como tornamos o voo mais confortavel e acessivel.</p>
+                            <a href="#">Clique Aqui</a>
+                        </div>
+                    </div>
+                    
+                    <div class="m-card">
+                        <img alt="icone documentos embarque" src="../imgs/passport.png">
+                        <div>
+                            <h4>Documentos</h4>
+                            <p>Documentos permitidos para verificação da viagem</p>
+                            <a href="#">Clique Aqui</a>
+                        </div>
+                    </div>
+
+                    <div class="m-card">
+                        <img alt="icone bagagens" src="../imgs/suitcase.png">
+                        <div>
+                            <h4>Bagagem</h4>
+                            <p>Entenda tudo acerca de bagagens e despachamentos nessa pagina </p>
+                            <a href="#">Clique Aqui</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div>
+                <h2>Fale Conosco</h2>
+                <p>
+                    Gostaria de enviar uma mensagem específica? Utilize o formulario a baixo e entre em contato com nosso time 
+                </p>
+                <center>
+                <form class="form-contato-container">
+                    <div class="m-card" >
+                        <div class="form-contato-container-forms">
+                            <h3>Entre em contato</h3>
+                            <div>
+                                <label for="nome">Digite seu nome: </label>
+                                <input id="nome">
+                            </div>
+                            <div>
+                                <label for="email">Digite seu Email: </label>
+                                <input name="email" id="email">
+                            </div>
+                            <div>
+                                <label for="titulo">Digite o motivo do contato: </label>
+                                <input name="Titulo" id="titulo">
+                            </div>
+                            <div>
+                                <label for="type">Selecione no que melhor se enquadra: </label>
+                                <select style="width: 162px;" name="type" id="type">
+                                    <option value="Nan">
+                                        
+                                    </option>
+                                    <option value="extravio">
+                                        Extravio de Objetos 
+                                    </option>
+                                    <option value="compra">
+                                        Problema compra
+                                    </option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="body">Detalhe sua situação: </label>
+                                <textarea style="max-height: 80px;" type="text" name="body" id="body"></textarea>
+                            </div>
+                            <button>Enviar</button>
+                        </div>
+                        <img alt="icone formulario" src="../imgs/content.png">
+                    </div>
+                </form>
+            </center>
+            </div>
+
+        </main>
+
+        <hr style="color: #674d3c;margin: 0px;">
+
+        <footer>
+            <div class="info-footer">
+                <h4>Veja Também: </h4>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="destinos.html">Destinos</a></li>
+                    <li><a href="promocoes.html">Promoções</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="info-footer-social-media">
+                <h4>Nos siga nas redes sociais: </h4>
+                <div class="info-footer-logos-container"> 
+                    <img src="../imgs/instagram.png" alt="logo instagram">
+                    <img src="../imgs/facebook.png" alt="logo facebook">
+                    <img src="../imgs/twitter.png" alt="logo twitter">
+                </div>    
+            </div>
+        </footer>
+        
+        <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap" rel="stylesheet">
+    </body>
+</html>

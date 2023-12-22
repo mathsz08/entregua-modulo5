@@ -1,0 +1,667 @@
+/*                  *****************************
+                            VARIAVEIS CSS
+                    *****************************                 */
+/*                  *****************************
+                                CSS BASE
+                    *****************************                 */
+* {
+  box-sizing: border-box;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+}
+
+html, body {
+  height: 100%;
+  font-size: 62.5%;
+}
+
+p {
+  font-size: 2rem;
+  text-align: justify;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+h2 {
+  font-size: 5rem;
+  color: #674d3c;
+}
+
+h3 {
+  font-size: 4rem;
+}
+
+h4 {
+  margin: 0;
+  font-size: 3rem;
+}
+
+a {
+  color: inherit;
+  font-size: 1.5rem;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+hr {
+  margin: 0.5rem;
+}
+
+input, label, button, textarea, option, select {
+  font-size: 1.5rem;
+}
+
+main {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 2% 7% 2% 7%;
+  background-color: #fff2df;
+  color: #674d3c;
+}
+
+header {
+  position: relative;
+  display: flex;
+  color: #d9ad7c;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+}
+header .header-backimg {
+  background-image: url(../imgs/eva-darron-oCdVtGFeDC0-unsplash.jpg);
+  background-position-y: 25%;
+  background-color: #555;
+  background-blend-mode: multiply;
+  background-size: cover;
+  height: 400px;
+  width: 100%;
+}
+header .header-nav {
+  list-style: none;
+  position: absolute;
+  padding: 2% 5% 0% 5%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header .header-nav-logo {
+  width: 15%;
+  height: 100%;
+}
+header .header-nav a {
+  padding: 1rem;
+  border-radius: 4rem;
+  font-size: 2rem;
+  transition: 0.3s;
+}
+header .header-nav a:hover {
+  background-color: aliceblue;
+  transform: scale(1.1);
+}
+header .header-content {
+  position: absolute;
+  top: 25%;
+  height: 20rem;
+  width: 100%;
+}
+header .header-content li {
+  padding: 6% 0% 0% 5%;
+}
+header .header-content li h2 {
+  color: #a2836e;
+  margin: 0px;
+  font-size: 50px;
+}
+header .header-content li p {
+  font-size: 2rem;
+  width: 70%;
+}
+
+footer {
+  padding: 2% 7% 1% 7%;
+  display: flex;
+  width: 100%;
+  background-color: #fff2df;
+  justify-content: space-between;
+}
+footer .info-footer {
+  width: 70%;
+  color: #674d3c;
+}
+footer .info-footer ul {
+  display: flex;
+  padding: 0px;
+}
+footer .info-footer li {
+  margin: 0px 5% 0px 0%;
+}
+footer .info-footer a {
+  cursor: pointer;
+  font-size: 2rem;
+  text-decoration: underline;
+  transition: 0.3s;
+}
+footer .info-footer-social-media {
+  width: 30%;
+  align-items: center;
+  color: #674d3c;
+}
+footer .info-footer-logos-container {
+  display: flex;
+  justify-content: flex-start;
+}
+footer .info-footer-logos-container img {
+  width: 15%;
+  height: 100%;
+  margin: 0px 10% 0px 5%;
+}
+
+.m-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  border-radius: 10px;
+}
+
+.hidden-nav {
+  display: none;
+}
+
+@media only screen and (max-width: 950px) {
+  .header-nav, .header-nav li {
+    display: none;
+  }
+  .hidden-nav {
+    position: absolute;
+    padding: 1% 0px 1% 0px;
+    background-color: #674d3c;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hidden-nav img {
+    width: 4rem;
+    padding: 0.5rem;
+    border: 0.1rem solid black;
+    border-radius: 1rem;
+  }
+  .dropdown-header {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-header:hover .dropdown-content-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+  }
+  .dropdown-header a {
+    font-size: 2.5rem;
+  }
+  .dropdown-content-header {
+    width: 100%;
+    display: none;
+    position: absolute;
+    margin-bottom: 1rem;
+    background-color: inherit;
+    min-width: 16rem;
+  }
+  .dropdown-content-header :hover {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+  }
+}
+/*                  *****************************
+                            CSS DESTINOS.HTML
+                    *****************************                 */
+.paises h4 {
+  background-color: #d9ad7c;
+  margin-top: 1rem;
+}
+.paises img {
+  width: 80%;
+  height: 100%;
+}
+
+/*                  *****************************
+                            CSS HOME.HTML
+                    *****************************                 */
+.aboutus p {
+  padding: 20px 10px 10px 10px;
+}
+.aboutus img {
+  padding: 30px 20px 15px 10px;
+  border-radius: 50%;
+  width: 197px;
+  height: 197px;
+  position: relative;
+  float: right;
+  right: 0.3%;
+  shape-outside: circle(50%);
+}
+
+.paises-box {
+  display: grid;
+}
+.paises-box-galeria {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(100px, 1fr));
+  grid-auto-rows: minmax(200px, auto);
+  grid-auto-flow: dense;
+  -moz-column-gap: 0.7em;
+       column-gap: 0.7em;
+  row-gap: 0.7em;
+  margin: 20px 0 40px 0;
+}
+.paises-box-galeria img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+  border: 2px #674d3c dashed;
+}
+.paises-box-galeria img:hover {
+  transform: scale(1.02);
+  transition: 0.3s ease-in-out;
+}
+.paises-box-galeria .span-vert {
+  grid-column-end: span 1;
+  grid-row-end: span 2;
+}
+.paises-box-galeria .span-hori {
+  grid-column-end: span 2;
+  grid-row-end: span 1;
+}
+
+/*                  *****************************
+                            CSS CONTATO.HTML
+                    *****************************                 */
+.sac-container {
+  display: flex;
+  justify-content: space-around;
+}
+.sac-container .m-card {
+  width: 40%;
+  height: 15rem;
+  padding: 1rem 2rem 1rem 2rem;
+  gap: 15%;
+  align-items: center;
+}
+.sac-container .m-card div {
+  width: 60%;
+  text-align: left;
+}
+.sac-container .m-card h4 {
+  white-space: nowrap;
+}
+.sac-container .m-card a {
+  font-size: 1.5rem;
+}
+.sac-container .m-card img {
+  width: 20%;
+  height: 60%;
+}
+
+.duvrec-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+.duvrec-container div > p {
+  font-size: 1.5rem;
+  text-align: left;
+}
+.duvrec-container .m-card {
+  width: 30%;
+  height: 13rem;
+  padding: 0.5rem 1rem 0.5rem 1.5rem;
+  gap: 10%;
+  align-items: center;
+}
+.duvrec-container img {
+  width: 20%;
+  height: 50%;
+}
+
+.form-contato-container .m-card {
+  width: 80%;
+  margin-top: 1rem;
+  padding: 2%;
+  justify-content: space-between;
+}
+.form-contato-container img {
+  width: 40%;
+  height: 40%;
+}
+.form-contato-container-forms {
+  width: 50%;
+  border-radius: 2rem;
+}
+.form-contato-container-forms h3 {
+  font-size: 4rem;
+}
+.form-contato-container-forms div {
+  margin: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+}
+.form-contato-container-forms label {
+  font-size: 2rem;
+}
+.form-contato-container-forms button {
+  margin-top: 2rem;
+  width: 50%;
+  font-size: 2rem;
+  background-color: #d9ad7c;
+  border-color: #674d3c;
+  border-radius: 1rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .sac-container .m-card p {
+    font-size: 1.5rem;
+  }
+  .sac-container .m-card img {
+    display: none;
+  }
+  .duvrec-container .m-card img {
+    display: none;
+  }
+  .form-contato-container-forms {
+    width: 100%;
+    padding: 0px 5rem 0px 5rem;
+  }
+  .form-contato-container img {
+    display: none;
+  }
+}
+/*                  *****************************
+                            CSS PROMOCOES.HTML
+                    *****************************                 */
+.main-promocoes {
+  display: flex;
+}
+
+.filtro-box {
+  width: 30%;
+  margin-right: 3%;
+  margin-top: 3%;
+}
+.filtro-box-lugares {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+}
+.filtro-box-valores {
+  margin-top: 1rem;
+}
+.filtro-box-valores div {
+  margin-left: 1rem;
+}
+.filtro-box-valores-slider {
+  border-radius: 5rem;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: #d9ad7c;
+  opacity: 0.7;
+  height: 3px;
+  width: 85%;
+}
+.filtro-box-valores-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+          appearance: none;
+  width: 10px;
+  height: 10px;
+  background: #d9ad7c;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.filtro-box-valores label {
+  font-size: 2rem;
+}
+.filtro-box-tipo {
+  margin-top: 1rem;
+}
+.filtro-box-tipo-container {
+  margin-left: 1rem;
+}
+.filtro-box-tipo label {
+  font-size: 2rem;
+}
+
+.box-products {
+  width: 100%;
+  margin-top: 3%;
+}
+
+.lista-viagens {
+  margin-left: 5rem;
+}
+.lista-viagens .viagem {
+  margin-left: 5rem;
+}
+.lista-viagens .viagem:not(:first-child) {
+  margin-top: 5%;
+}
+.lista-viagens .viagem .m-card {
+  width: 90%;
+  height: 70%;
+  padding: 2%;
+  display: flex;
+}
+.lista-viagens .viagem .m-card img {
+  width: 20.5rem;
+  height: 13.7rem;
+  border-radius: 1rem;
+}
+.lista-viagens .viagem .m-card .info {
+  margin-left: 5%;
+  width: 100%;
+}
+.lista-viagens .viagem .m-card .sub-card {
+  display: flex;
+  align-items: end;
+}
+.lista-viagens .viagem .m-card .sub-card button {
+  height: 3rem;
+  width: 50%;
+  border-radius: 1rem;
+}
+.lista-viagens .viagem .m-card .sub-info {
+  width: 70%;
+}
+
+.dropdown {
+  margin-top: 1rem;
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  padding-left: 10%;
+  margin-bottom: 1rem;
+  background-color: inherit;
+  min-width: 16rem;
+}
+.dropdown:hover .dropdown-content {
+  display: flex;
+  cursor: pointer;
+  flex-direction: column;
+  position: relative;
+}
+
+
+@media only screen and (max-width: 800px) {
+  .viagem .m-card {
+    padding-top: 5%;
+    width: 90%;
+    align-items: center;
+    flex-direction: column;
+  }
+  .viagem .m-card .info {
+    margin-left: 5%;
+    width: 80%;
+  }
+  .viagem .m-card img {
+    width: 30rem;
+    height: 19rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+  }
+  .viagem .m-card .sub-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .viagem .m-card .sub-card button {
+    margin-left: 2rem;
+    width: 80%;
+  }
+}
+/*                  *****************************
+                            CSS INDEX.HTML
+                    *****************************                 */
+.menubg {
+  background-color: #a2836e;
+}
+
+.menu-nav-container {
+  padding: 2rem 10rem;
+}
+.menu-nav {
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  grid-template-rows: auto;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2rem;
+  -moz-column-gap: 1.6rem;
+       column-gap: 1.6rem;
+}
+.menu-nav a {
+  text-decoration: none;
+  color: #fff2df;
+  padding: 0.4rem;
+}
+.menu-nav div {
+  display: flex;
+  justify-content: right;
+}
+.menu-nav-title {
+  font-size: 5rem;
+  color: #fff2df;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+}
+.menu-nav-int {
+  display: flex;
+  gap: 1.5rem;
+}
+.menu-nav-int a:hover {
+  transform: scale(1.1);
+  -webkit-text-decoration: underline #fff2df;
+          text-decoration: underline #fff2df;
+}
+.menu-nav-login {
+  border-radius: 1rem;
+  background-color: #9D6EA2;
+  border: 0.1rem solid black;
+  width: 10.5rem;
+  text-align: center;
+}
+
+.main-index {
+  background-color: #a2836e;
+  padding: 0;
+  text-align: center;
+}
+.main-index-title {
+  color: #fff2df;
+  margin-top: 4rem;
+  font-size: 4rem;
+}
+.main-index-text {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.main-index-img {
+  position: absolute;
+  bottom: 1rem;
+  width: 40%;
+  height: 50%;
+}
+.main-index-button {
+  font-size: 2rem;
+  color: #fff2df;
+  padding: 0.5rem 10rem;
+  border-radius: 1rem;
+  border: 0.2rem solid black;
+  background-color: #9D6EA2;
+  text-decoration: none;
+}
+
+.img-f {
+  left: 1rem;
+}
+
+.img-s {
+  right: 1rem;
+}
+
+@media only screen and (max-width: 1000px) {
+  .img {
+    width: 40%;
+    height: 40%;
+  }
+}
+/*                  *****************************
+                            CSS LOGIN.HTML
+                    *****************************                 */
+.login {
+  background-color: #a2836e;
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+}
+.login-forms-container {
+  text-align: center;
+  height: 20rem;
+}
+.login-forms-container h2 {
+  font-size: 6rem;
+}
+.login-forms-container .button {
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  background-color: #9D6EA2;
+  border: 0.1rem solid black;
+  width: 10.5rem;
+  text-align: center;
+}
+.login-imagem {
+  position: absolute;
+  height: 60%;
+  right: 5%;
+}
+.login-imagem-2 {
+  position: absolute;
+  height: 60%;
+  left: 100px;
+}
+
+/*                  *****************************
+                            CSS CADASTRO.HTML
+                    *****************************                 *//*# sourceMappingURL=style.css.map */

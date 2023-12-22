@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.hymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/reset.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">  
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/base.css">
+    <title>Login</title>
+</head>
+<body style="background-color: #a2836e;">
+    <div class="menu-nav-container">
+        <div class="menu-nav">
+            <nav class="menu-nav-int">
+                <a th:href="@{/destino}">Destinos</a>
+                <a  th:href="@{/destinos}">Promoções</a>
+                <a  th:href="@{/contato}">Contato</a></li>
+                <a th:href="@{/passagens}">Passagens</a>
+            </nav>
+            <a class="menu-nav-title" href="#">Contrip</a></li>
+            <div class="menu-nav-int">
+                <a href="./html/home.html" th:href="@{/home}">Sobre nós</a>
+                <a class="menu-nav-login"  th:href="@{/login}">Login </a>
+            </div>
+        </div>
+    </div>
+    <div class="login">
+        <div class="">
+a
+        </div>
+        <div class="login-forms-container">
+            <h2>Preencha os Dados</h2>
+            <forms class="forms">
+                <center>
+                    <table>
+                        <tr>
+                            <td style="padding: 5px;">
+                                <label style="font-size: 2.3rem;" for="Login">Login</label>
+                            </td>
+                            <td style="padding: 5px;">
+                                <input style="font-size: 2.3rem;" type="text" id="Login" placeholder="Nome de Usuário">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 5px;">
+                                <label style="font-size: 2.3rem;" for="Senha">Senha</label>
+                            </td>
+                            <td style="padding: 5px;">
+                                <input style="font-size: 2.3rem;" type="password" id="Senha" placeholder="Senha">
+                            </td>
+                        </tr>
+                    </table>
+                    <button class="button">
+                        Entrar
+                    </button>
+                    <a th:href="@{/usuarios}" style="padding-right:35px;padding-left:35px;padding-top: 5px;padding-bottom: 5px;" class="button">
+                        Admin
+                    </a>
+                    <p style="font-size: 1.4rem; text-align: center;">
+                        Não é logado? <a href="./cadastro.html" style="font-size: 1.4rem;font-family: 'Yanone Kaffeesatz', sans-serif; text-decoration: underline;">Cadastre-se</a>
+                    </p>
+                </center>
+            </forms>
+        </div>
+        <div class="">c</div>
+
+        <img class="login-imagem" alt="garot utilizando o computador" src="../imgs/img1.png" th:attr="src=@{img/img1.png}">
+        <img class="login-imagem-2" alt="garot utilizando o computador" src="../imgs/img-2.png" th:attr="src=@{img/img-2.png}">
+    
+    </div>
+    
+    
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap" rel="stylesheet">
+</body>
+</html>

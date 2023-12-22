@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/reset.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">  
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/base.css">
+       
+    <title>Login</title>
+</head>
+<body>
+    <div class="menubg">
+        <div class="menu-nav-container">
+            <div class="menu-nav">
+                <nav class="menu-nav-int">
+                    <a th:href="@{/destino}">Destinos</a>
+                    <a  th:href="@{/promocoes}">Promoções</a>
+                    <a  th:href="@{/contato}">Contato</a></li>
+                </nav>
+                <a class="menu-nav-title" href="../index.html">Contrip</a></li>
+                <div class="menu-nav-int">
+                    <a href="./home.html">Sobre nós</a>
+                    <a class="menu-nav-login"  href="./cadastro.html">Login </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="login">
+        <div class="">
+            a
+        </div>
+        <div class="login-forms-container">
+            <h2>Preencha os Dados</h2>
+            <div class="container">
+              
+            </div>
+            <forms class="forms" id="forms-usuario">
+                <center>
+                    <table>
+                        <tr>
+                            <tr>
+                                <td style="padding: 5px;">
+                                    <label style="font-size: 2.3rem;" for="Rg">Senha</label>
+                                </td>
+                                <td style="padding: 5px;">
+                                    <input style="font-size: 2.3rem;" type="text" id="Rg" placeholder="Rg">
+                                </td>
+                            </tr>
+                            <td style="padding: 5px;">
+                                <label style="font-size: 2.3rem;" for="Login">Login</label>
+                            </td>
+                            <td style="padding: 5px;">
+                                <input style="font-size: 2.3rem;" type="text" id="Login" placeholder="Nome de Usuário">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 5px;">
+                                <label style="font-size: 2.3rem;" for="Senha">Senha</label>
+                            </td>
+                            <td style="padding: 5px;">
+                                <input style="font-size: 2.3rem;" type="password" id="Senha" placeholder="Senha">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 5px;">
+                                <label style="font-size: 2.3rem;" for="Cpf">Cpf</label>
+                            </td>
+                            <td style="padding: 5px;">
+                                <input style="font-size: 2.3rem;" type="text" id="Cpf" placeholder="Cpf">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 5px;">
+                                <label style="font-size: 2.3rem;" for="DataNasc">Senha</label>
+                            </td>
+                            <td style="padding: 5px;">
+                                <input style="font-size: 2.3rem;" type="date" id="DataNasc" placeholder="Data Nascimento">
+                            </td>
+                        </tr>
+                    </table>
+                    
+                    <p style="font-size: 1.4rem; text-align: center;">
+                        Ja é cadastrado? <a href="./login.html" style="font-size: 1.4rem;font-family: 'Yanone Kaffeesatz', sans-serif; text-decoration: underline;">Login</a>
+                    </p>
+                </center>
+                <button class="button" onclick="proximaTela()">
+                    Proximo
+                </button>
+            </forms>
+            <forms class="forms" id="forms-endereco" style="display: none;">
+                <center>
+                    <table>
+                        <tr>
+                            <tr>
+                                <td style="padding: 5px;">
+                                    <label style="font-size: 2.3rem;" for="Rg">Cep</label>
+                                </td>
+                                <td style="padding: 5px;">
+                                    <input style="font-size: 2.3rem;" type="text" id="Cep" placeholder="Cep">
+                                </td>
+                            </tr>
+                            <td style="padding: 5px;">
+                                <label style="font-size: 2.3rem;" for="Pais">Pais</label>
+                            </td>
+                            <td style="padding: 5px;">
+                                <input style="font-size: 2.3rem;" type="text" id="Pais" placeholder="Pais">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 5px;">
+                                <label style="font-size: 2.3rem;" for="Cidade">Cidade</label>
+                            </td>
+                            <td style="padding: 5px;">
+                                <input style="font-size: 2.3rem;" type="text" id="Cidade" placeholder="Cidade">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 5px;">
+                                <label style="font-size: 2.3rem;" for="Bairro">Bairro</label>
+                            </td>
+                            <td style="padding: 5px;">
+                                <input style="font-size: 2.3rem;" type="text" id="Bairro" placeholder="Bairro">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 5px;">
+                                <label style="font-size: 2.3rem;" for="Rua">Rua</label>
+                            </td>
+                            <td style="padding: 5px;">
+                                <input style="font-size: 2.3rem;" type="text" id="Rua" placeholder="Rua">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 5px;">
+                                <label style="font-size: 2.3rem;" for="Numero">Numero</label>
+                            </td>
+                            <td style="padding: 5px;">
+                                <input style="font-size: 2.3rem;" type="text" id="Numero" placeholder="Numero">
+                            </td>
+                        </tr>
+                    </table>
+                    
+                    <p style="font-size: 1.4rem; text-align: center;">
+                        Ja é cadastrado? <a href="./login.html" style="font-size: 1.4rem;font-family: 'Yanone Kaffeesatz', sans-serif; text-decoration: underline;">Login</a>
+                    </p>
+                </center>
+                <button class="button" onclick="voltarTela()">
+                    Voltar
+                </button>
+                <button style="margin-left: 10px ;" class="button" onclick="proximaTela()">
+                    Cadastrar
+                </button>
+            </forms>
+            
+        </div>
+        <div class="">c</div>
+
+        <img class="login-imagem" alt="garot utilizando o computador" src="../imgs/img1.png" >
+        <img class="login-imagem-2" alt="garot utilizando o computador" src="../imgs/img-2.png" >
+    
+    </div>
+    <script src="../Js/script.js"></script>
+    
+    
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap" rel="stylesheet">
+    
+</body>
+</html>
