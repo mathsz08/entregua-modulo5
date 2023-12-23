@@ -21,26 +21,26 @@
 
             <div class="hidden-nav">
                 <div class="dropdown-header">
-                    <center><img src="../imgs/icon_menu.png"></center>
+                    <center><img th:attr="src=@{img/icon_menu.png}" src="../imgs/icon_menu.png"></center>
                     <ul class="dropdown-content-header">
                         <li><a href="home.html">Sobre nós</a></li>
                         <li><a th:href="@{/destino}">Destinos</a></li>
                         <li><a th:href="@{/promocoes}">Promoções</a></li>
                         <li><a href="#">Contato</a></li>
-                        <li><a th:href="@{/login}">Login <img alt="icone login" style="height: 20px; width: 20px;border: 1px solid  black; border-radius: 50%;" src="../imgs/user.png"> </a></li>
+                        <li><a th:href="@{/login}">Login <img  alt="icone login" style="height: 20px; width: 20px;border: 1px solid  black; border-radius: 50%;" th:attr="src=@{img/user.png}" src="../imgs/user.png"> </a></li>
                     </ul>
                 </div>
             </div>
         
             <ul class="header-nav">
                 <li>
-                    <a style="background-color:transparent;" href="../index.html"><img class="header-nav-logo" src="../imgs/airplane.png" alt="Logo Empresa"></a>
+                    <a style="background-color:transparent;" href="../index.html"><img class="header-nav-logo" th:attr="src=@{img/airplane.png}" src="../imgs/airplane.png" alt="Logo Empresa"></a>
                 </li>
                 <li><a href="home.html">Sobre nós</a></li>
                 <li><a th:href="@{/destino}">Destinos</a></li>
                 <li><a th:href="@{/promocoes}">Promoções</a></li>
                 <li><a href="#">Contato</a></li>
-                <li><a href="login.html">Login <img alt="icone login" style="height: 20px; width: 20px;border: 1px solid  black; border-radius: 50%;" src="../imgs/user.png"> </a></li>
+                <li><a href="login.html">Login <img alt="icone login" style="height: 20px; width: 20px;border: 1px solid  black; border-radius: 50%;" th:attr="src=@{img/user.png}" src="../imgs/user.png"> </a></li>
             </ul>
             
             <ul class="header-content">
@@ -64,7 +64,7 @@
                             <p>Conta-nos o que esta acontecendo e iremos te ajudar</p>
                             <a href="#">Clique Aqui</a>
                         </div>
-                        <img alt="Icone Atendimento Online" src="../imgs/customer-service.png">
+                        <img alt="Icone Atendimento Online" th:attr="src=@{img/customer-service.png}" src="../imgs/customer-service.png">
                     </div>
                     
                     <div class="m-card">
@@ -73,7 +73,7 @@
                             <p>Verifique respostas de casos em aberto</p>
                             <a href="#">Clique Aqui</a>
                         </div>
-                        <img alt="Icone Casos Pendentes" src="../imgs/hourglass.png">                  
+                        <img alt="Icone Casos Pendentes" th:attr="src=@{img/hourglass.png}" src="../imgs/hourglass.png">                  
                     </div>
 
                 </div>
@@ -84,7 +84,7 @@
                 <div class="duvrec-container">
 
                     <div class="m-card">
-                        <img alt="Icone Protocolos de Saúde" src="../imgs/mask.png">
+                        <img alt="Icone Protocolos de Saúde" th:attr="src=@{img/mask.png}" src="../imgs/mask.png">
                         <div>
                             <h4>Cuidados</h4>
                             <p>Protocolos de medida de segurança exigidos para o vôo </p>
@@ -93,7 +93,7 @@
                     </div>
 
                     <div class="m-card">
-                        <img alt="icone caixa de pet" src="../imgs/pet-cage.png">
+                        <img alt="icone caixa de pet" th:attr="src=@{img/pet-cage.png}" src="../imgs/pet-cage.png">
                         <div>
                             <h4>Pets</h4>
                             <p>Entenda como fornecer maior conforto para seu pet nas viagens</p>
@@ -102,7 +102,7 @@
                     </div>
 
                     <div class="m-card  ">
-                        <img alt="icone calendario" src="../imgs/calendar.png">
+                        <img alt="icone calendario" th:attr="src=@{img/calendar.png}" src="../imgs/calendar.png">
                         <div>
                             <h4>Reagendamentos</h4>
                             <p>Problema com a data escolhida? Descubra como resolver nesse artigo</p>
@@ -111,7 +111,7 @@
                     </div>
 
                     <div class="m-card">
-                        <img alt="icone acessibilidade" src="../imgs/wheelchair.png">
+                        <img alt="icone acessibilidade" th:attr="src=@{img/wheelchair.png}" src="../imgs/wheelchair.png">
                         <div>
                             <h4>Acessibilidade</h4>
                             <p>Entenda como tornamos o voo mais confortavel e acessivel.</p>
@@ -120,7 +120,7 @@
                     </div>
                     
                     <div class="m-card">
-                        <img alt="icone documentos embarque" src="../imgs/passport.png">
+                        <img alt="icone documentos embarque" th:attr="src=@{img/passport.png}" src="../imgs/passport.png">
                         <div>
                             <h4>Documentos</h4>
                             <p>Documentos permitidos para verificação da viagem</p>
@@ -129,7 +129,7 @@
                     </div>
 
                     <div class="m-card">
-                        <img alt="icone bagagens" src="../imgs/suitcase.png">
+                        <img alt="icone bagagens" th:attr="src=@{img/suitcase.png}" src="../imgs/suitcase.png">
                         <div>
                             <h4>Bagagem</h4>
                             <p>Entenda tudo acerca de bagagens e despachamentos nessa pagina </p>
@@ -182,7 +182,7 @@
                             </div>
                             <button>Enviar</button>
                         </div>
-                        <img alt="icone formulario" src="../imgs/content.png">
+                        <img th:attr="src=@{img/content.png}" alt="icone formulario" src="../imgs/content.png">
                     </div>
                 </form>
             </center>
@@ -206,9 +206,9 @@
             <div class="info-footer-social-media">
                 <h4>Nos siga nas redes sociais: </h4>
                 <div class="info-footer-logos-container"> 
-                    <img src="../imgs/instagram.png" alt="logo instagram">
-                    <img src="../imgs/facebook.png" alt="logo facebook">
-                    <img src="../imgs/twitter.png" alt="logo twitter">
+                    <img th:attr="src=@{img/instagram.png}" src="../imgs/instagram.png" alt="logo instagram">
+                    <img th:attr="src=@{img/facebook.png}" src="../imgs/facebook.png" alt="logo facebook">
+                    <img th:attr="src=@{img/twitter.png}" src="../imgs/twitter.png" alt="logo twitter">
                 </div>    
             </div>
         </footer>
